@@ -1,26 +1,18 @@
 # 6 -2 -25
-# today our topic is single dimension array 
+# today our topic is array dimension 
 
-# a single or 1 dimensional array (1D array) in python is  a collection of elements stores in one single row.
+# it we talk about different dimesnions of array. But in this tutorial we only talk about singel dimension array or 1d array 
 
-#for example
+# 1d array 
+# A 1d array is simply a list of elements in form of row or column. 
 
 import numpy as np
 
-myArray= np.array(['This','is','single','array']) #note when we use numpy only single data type elements can store like above we store only string and if we store any number with it then giive us error
+myArray=np.array([1,2,3,4,5])
+print("1d array is : ", myArray)
 
-# numpy directly store the element back to back in array that's why it is faster then list
+# as we can see we have one single array in row form mean it is 1d array. 
 
-print(myArray)# only one datatype element is store for performance
-
-
-
-#also study the difference between list and numpy in the form of comments
-
-#it also work in List 
-
-myList=['This','is','single','array','using','list'] # in list we can store multiple data type it not matter in list
-
-# list doesn't store elements directly in list. It create pointer for that element. That's the reason it is slower then numpy array 
-
-print(myList)# list is slower then numpy array
+#NOTICE
+myArray2=np.array([1,3,4,'five'])
+print(myArray2)
